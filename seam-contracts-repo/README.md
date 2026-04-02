@@ -1,4 +1,7 @@
-# Blockchain-Anchored Seam Contracts
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/e696cced-7cd4-4f9f-b065-115fd3ac7270" />
+
+
+🦞# Blockchain-Anchored Seam Contracts🦞
 
 **Formal governance for AI agent data pipelines, cryptographically committed to the BSV blockchain.**
 
