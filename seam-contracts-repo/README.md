@@ -1,5 +1,3 @@
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/1f3308c1-2e3a-4148-9a97-562b7eac73b1" />
-
 
 🦞# Blockchain-Anchored Seam Contracts🦞
 
