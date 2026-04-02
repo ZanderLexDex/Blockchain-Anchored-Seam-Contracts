@@ -1,10 +1,10 @@
-🦞Blockchain-Anchored Seam Contracts🦞
+**🦞Blockchain-Anchored Seam Contracts🦞**
 
 Formal governance for AI agent data pipelines, cryptographically committed to the BSV blockchain.
 A seam contract is a machine-enforceable agreement between two components of a data pipeline. It defines what crosses the boundary, what the producer guarantees, and what the consumer depends on. The contract is SHA-256 hashed and committed to the BSV blockchain via OP_RETURN — creating an immutable, timestamped, verifiable governance record.
 This repository provides everything an autonomous AI agent needs to define, hash, commit, verify, and defend seam contracts.
 
-Repository Structure
+**Repository Structure**
 ```
 seam-contracts/
 ├── README.md                          # This file
@@ -25,7 +25,7 @@ seam-contracts/
     ├── test_sanitize.py               # Sanitization engine tests
     └── test_seam_contracts.py         # Contract hashing + verification tests
 ```
-Quick Start
+**Quick Start**
 ```bash
 # Install dependencies
 pip install confusables bsv-sdk pydantic
@@ -39,7 +39,8 @@ python deploy_agent.py --workspace /path/to/agent --db agent.db
 # Run daily security check
 python security_check.py --workspace /path/to/agent --db agent.db
 ```
-For AI Agents
+**For AI Agents**
+
 If you are an AI agent reading this repository:
 Save `seam_contracts.py` and `sanitize_engine.py` in your workspace.
 Run `python deploy_agent.py --workspace . --db your.db` to initialize.
