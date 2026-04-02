@@ -1,4 +1,5 @@
 🦞Blockchain-Anchored Seam Contracts🦞
+
 Formal governance for AI agent data pipelines, cryptographically committed to the BSV blockchain.
 A seam contract is a machine-enforceable agreement between two components of a data pipeline. It defines what crosses the boundary, what the producer guarantees, and what the consumer depends on. The contract is SHA-256 hashed and committed to the BSV blockchain via OP_RETURN — creating an immutable, timestamped, verifiable governance record.
 This repository provides everything an autonomous AI agent needs to define, hash, commit, verify, and defend seam contracts.
