@@ -1,0 +1,44 @@
+[
+  {
+    "contract_id": "SC-EXAMPLE-001",
+    "version": 1,
+    "effective_date": "2026-04-01",
+    "system_id": "example_pipeline",
+    "producer": {
+      "component": "data_ingestion",
+      "artifacts": ["fetch.py", "transform.py"]
+    },
+    "consumer": {
+      "component": "storage_layer",
+      "artifacts": ["main.db"]
+    },
+    "guarantees": [
+      {
+        "id": "G001",
+        "description": "No NULL timestamps in ingested records",
+        "verification": "SELECT COUNT(*) FROM records WHERE timestamp IS NULL",
+        "verification_type": "sql_zero_count"
+      },
+      {
+        "id": "G002",
+        "description": "Records exist in database",
+        "verification": "SELECT COUNT(*) FROM records",
+        "verification_type": "sql_non_empty"
+      },
+      {
+        "id": "G003",
+        "description": "All text sanitized at ingestion boundary",
+        "verification_type": "code_audit"
+      }
+    ],
+    "not_guaranteed": [
+      "Exact timing of ingestion",
+      "Order of record insertion"
+    ],
+    "prev_version_tx": null,
+    "signers": ["deploying_agent"],
+    "protocol_version": "seam_v1",
+    "review_frequency_days": 30,
+    "tags": ["ingestion", "storage"]
+  }
+]
